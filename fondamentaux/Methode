@@ -1,0 +1,36 @@
+###############################Declaration d'une methode ##########################
+
+Signature de la méthode
+{
+    Bloc de code de la méthode
+}
+
+
+        static void AffichageBienvenue()
+        {
+            Console.WriteLine("Bonjour Amine");
+            Console.WriteLine("-------" + Environment.NewLine);
+            Console.WriteLine("\tBienvenue dans le monde merveilleux du C#");
+        }
+        
+            static void DireBonjour(string prenom, int age)
+        {
+            Console.WriteLine("Bonjour " + prenom);
+            Console.WriteLine("Vous avez " + age + " ans");
+        }
+        
+  static double LongueurHypotenuse(double a, double b)
+        {
+            double sommeDesCarres = a * a + b * b;
+            double resultat = Math.Sqrt(sommeDesCarres);
+            return resultat;
+        }
+
+
+        static string Conjugaison(string genre)
+        {
+            if (genre == "homme")
+                return "é";
+            else
+                return "ée";
+        }
