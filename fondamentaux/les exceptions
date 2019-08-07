@@ -1,0 +1,24 @@
+try{
+}
+catch
+{
+}
+
+
+ try
+            {
+                y = int.Parse(Console.ReadLine());
+                Console.WriteLine("le message est le suivant :{0}", y);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
+            finally
+            {
+
+            }
+ ###################################################
+ 
+ throw new exceptioin ("test exception creation");
