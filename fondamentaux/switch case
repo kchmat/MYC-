@@ -1,0 +1,26 @@
+Switch (choix)
+{
+case 1:
+
+}
+
+switch (level)
+{
+    case 1:
+    {
+        // niveau 1
+    }
+    break;
+
+    case 2:
+    {
+        // niveau 2
+    }
+    break;
+
+    default:
+    {
+        // autre niveau
+    }
+    break;
+}
