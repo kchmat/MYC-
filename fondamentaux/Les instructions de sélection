@@ -1,0 +1,8 @@
+ if(y >= 10)
+            {
+                Console.WriteLine("voila superieur à 10");
+            }
+            else
+            {
+                Console.WriteLine("voila inferieur à 10");
+            }
