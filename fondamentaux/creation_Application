@@ -1,0 +1,3 @@
+CLR : common : machine virtuelle il fournir le ramasse miettes 
+MSIL : intermediare language 
+compilateur ==> MSIL ===> CLR ===> code natif (managé)
