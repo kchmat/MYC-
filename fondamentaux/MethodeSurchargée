@@ -1,0 +1,14 @@
+mamethod(amine:"eloualid,type:1);
+
+methode avec le parametre de sortie out 
+ref
+
+mamethode(int a, ref int b, out int c)
+
+public void mamethode()
+{
+}
+
+public void mamethode(string monparametre)
+{
+}
