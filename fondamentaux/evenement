@@ -10,3 +10,38 @@ mondelegate d = new mondelegate(Notification);
 d("voial delegate");
 
 ########################################################methode anonym################
+
+##################################################evenement#################################
+
+event (editeur abonnée)
+
+
+
+
+public static void Bienvenue ()
+        {
+            Console.WriteLine("Bienvenue dans la programmation C#");
+        }
+
+        public static void Fantastique()
+        {
+            Console.WriteLine("vous commencer à prendre de l'altétude");
+        }
+        
+        //declaration du delegue
+        public delegate void mondelegue();
+        
+        //declaration de l'evenement du delegue
+        public static event mondelegue MonEvenement;
+
+       
+        public static void declancheur ()
+        {
+            MonEvenement();
+
+        }
+        
+        //main
+        
+         MonEvenement += new mondelegue(Bienvenue);
+            declancheur();
