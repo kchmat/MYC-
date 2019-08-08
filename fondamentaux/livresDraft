@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Livre
+    {
+
+        #region attribut
+        private string auteur;
+        private string titre;
+        private string edition;
+        private int compteur = 0;
+        #endregion attribut
+
+        #region accesseur
+
+        public string Auteur
+        {
+            get;
+            set;
+        }
+        public string Titre
+        {
+            get
+            {
+                return titre;
+            }
+
+            set
+            {
+                titre = value;
+            }
+        }
+
+        public string Edition
+        {
+            get;
+            set;
+        }
+        #endregion accesseur
+
+        #region constructeur
+        public Livre()
+        {
+
+            Console.WriteLine("livre vide");
+
+        }
+        public Livre(string titre, string auteur, string edition)
+        {
+            this.titre = titre;
+            this.auteur = auteur;
+            this.edition = edition;
+            Console.WriteLine("livre vide");
+
+        }
+        #endregion
+
+        #region Methode
+        public void ajouter(Livre l)
+        {
+            this.auteur = l.auteur;
+            this.titre = l.titre;
+            this.edition = l.edition;
+            this.compteur++;
+        }
+        public void afficher(Livre[] l)
+        {
+            for (int i = 0; i < compteur; i++)
+            {
+                Console.WriteLine("le titre :" + l[i].titre);
+                Console.WriteLine("le titre :" + l[i].titre);
+                Console.WriteLine("le titre :" + l[i].titre);
+            }
+            #endregion
+        }
+    }
+}
