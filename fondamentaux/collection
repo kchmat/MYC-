@@ -5,3 +5,9 @@ Stack pile = new Stack ();LIFO
 Arraylist arr = new arraylist ();
 
 ArrayList mylist = new ArrayList();
+
+
+#################################using System.Collections.Specialized;
+using System.Collections.Specialized;
+
+StringCollection Str = new StringCollection();
