@@ -1,0 +1,7 @@
+using System.Collections;
+
+Queue file = new Queue (); FIFO
+Stack pile = new Stack ();LIFO
+Arraylist arr = new arraylist ();
+
+ArrayList mylist = new ArrayList();
