@@ -1,0 +1,59 @@
+champ est un attribut 
+
+##accesseurs 
+##constucteurs
+
+
+
+##########################################################################################################
+class Livre
+    {
+
+        #region attribut
+        private string auteur;
+        private string titre;
+        private string edition;
+
+        #endregion attribut
+
+        #region accesseur
+
+        public string Auteur
+        {
+            get;
+            set;
+        }
+        public string Titre
+        {
+            get
+            {
+                return titre;
+            }
+
+            set
+            {
+                titre = value;
+            }
+        }
+
+        #endregion accesseur
+    #region constructeur
+        public Livre ()
+        {
+
+            Console.WriteLine("livre vide");
+
+        }
+        public Livre(string titre,string auteur,string edition)
+        {
+            this.titre = titre;
+            this.auteur = auteur;
+            this.edition = edition;
+            Console.WriteLine("livre vide");
+
+        }
+
+
+    }
+    
+    ##############################################################################################
