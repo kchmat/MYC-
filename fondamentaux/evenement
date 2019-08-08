@@ -1,0 +1,12 @@
+
+ public static void Notification (String nom)
+        {
+            Console.WriteLine("notification pour {0}", nom);
+        }
+
+
+public delegate void mondelegate(string om);
+mondelegate d = new mondelegate(Notification);
+d("voial delegate");
+
+########################################################methode anonym################
