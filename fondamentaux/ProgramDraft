@@ -1,0 +1,31 @@
+cusing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Livre [] monlivre = new Livre[2];
+            Livre l = new Livre();
+            //monlivre[0].Auteur = "eloualid";
+            //monlivre[0].Titre = "programmation c #";
+            //monlivre[0].Edition = "Eni";
+
+            //monlivre[1].Auteur = "eloualid";
+            //monlivre[1].Titre = "programmation c #";
+            //monlivre[1].Edition = "Eni";
+
+            l.Auteur = "eloualid";
+            l.Titre = "programmation c #";
+            l.Edition = "Eni";
+            monlivre[0].ajouter(l);
+
+            Console.ReadLine();
+        }
+    }
+}
