@@ -1,1 +1,95 @@
 //https://www.exelib.net/exercices/programmation/csharp/Page-2-20.html
+
+
+
+
+
+########################################################################Livre#########################################
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Livre
+    {
+       private string Titre;
+        private string Auteur;
+        private string Prix;
+
+
+
+        public Livre()
+        { }
+       public  Livre (string Titre,string Auteur,string Prix)
+        {
+            this.Titre = Titre;
+            this.Auteur = Auteur;
+            this.Prix = Prix;
+        }
+        public string titre
+        {
+            get;
+            set;
+        }
+        public string auteur
+        {
+            get;
+            set;
+        }
+        public string prix
+        {
+            get;
+            set;
+        }
+
+        public void Afficher(Livre l)
+        {
+            Console.WriteLine("le titre est : {0} ,l'auteur est {1} est le prix : {2} euro",l.titre,l.auteur,l.prix);
+
+        }
+    }
+}
+
+########################################################################Livre#########################################
+################################################Program#################################################################
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //programme de test 
+            // Test Livre 
+            #region
+
+            Livre l = new Livre();
+
+            Console.WriteLine("Donner le titre:");
+            l.titre = Console.ReadLine();
+            Console.WriteLine("Donner l'auteur:");
+            l.auteur = Console.ReadLine();
+            Console.WriteLine("Donner le prix:");
+            l.prix = Console.ReadLine();
+            l.Afficher(l);
+            Console.ReadLine();
+            #endregion
+
+        }
+    }
+}
+
+#######################################################################################################################
+
+
+
