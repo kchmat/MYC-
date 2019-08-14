@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Rectangle
+    {
+
+        #region attributs 
+        private double longeur;
+        private double largeur;
+        #endregion
+
+        #region  Constucteur
+
+        public Rectangle()
+        {
+
+        }
+        #endregion
+        #region set
+        public double Longeur 
+        {
+            set { longeur = value; }
+            get { return longeur; }
+        }
+
+        public double Largeur {
+            get;
+            set;
+        }
+        
+        #endregion
+
+
+
+    }
+}
