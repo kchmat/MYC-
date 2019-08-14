@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //programme de test 
+            // Test Livre 
+            #region
+
+            Livre l = new Livre();
+
+            Console.WriteLine("Donner le titre:");
+            l.titre = Console.ReadLine();
+            Console.WriteLine("Donner l'auteur:");
+            l.auteur = Console.ReadLine();
+            Console.WriteLine("Donner le prix:");
+            l.prix = Console.ReadLine();
+            l.Afficher(l);
+            Console.ReadLine();
+            #endregion
+
+        }
+    }
+}
