@@ -20,8 +20,14 @@ namespace Exercices
         {
 
         }
+
+        public Rectangle(double longeur,double largeur)
+        {
+            this.longeur = longeur;
+            this.largeur = largeur;
+        }
         #endregion
-        #region set
+        #region accesseurs
         public double Longeur 
         {
             set { longeur = value; }
