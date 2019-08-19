@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Compte
+    {
+        #region attributs
+        double solde;
+        public static double numCompte = 0000;
+        Client myclient;
+        #endregion
+
+        #region constucteur
+
+        public Compte()
+        {
+            numCompte++;
+        }
+        public Compte(double solde, Client myclient)
+        {
+            this.solde = solde;
+            this.myclient = myclient;
+        }
+   
+     
+        #endregion
+
+        #region accesseurs
+       public double Solde
+        {
+            get { return solde; }
+        }
+        public double NumCompte
+        {
+            get { return numCompte}
+        }
+        public Client Myclient
+        {
+            get { return myclient; }
+            set { myclient = value; }
+        }
+        #endregion
+
+        #region Methode
+      public void Crediter(double somme)
+        {
+            this.solde = this.solde + somme;
+        }
+
+        public void Crediter(double somme ,Compte c)
+        {
+            this.solde = this.solde - somme;
+            c.solde = c.solde + somme;
+        }
+
+        public void Debiter(double somme)
+        {
+            this.solde = this.solde - somme;
+        }
+
+        public void Debiter(double somme, Compte c)
+        {
+            this.solde = this.solde - somme;
+            c.solde = c.solde - somme;
+        }
+
+        public void Afficher ()
+        {
+            Console.WriteLine("le numero de compte : {0}", numCompte);
+            Console.WriteLine("le solde:{0}", this.solde);
+            this.myclient.Afficher(this.myclient);
+
+        }
+        #endregion
+    }
+}
