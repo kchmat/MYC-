@@ -1,0 +1,143 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //programme de test 
+            // Test Livre 
+            #region start
+            int choix;
+
+
+            Menu();
+            choix = Int32.Parse(Console.ReadLine());
+            
+
+            switch (choix)
+            {
+                case 1:
+                     Console.WriteLine("vous allez tester la classe {0}", choix);
+                    Livre l = new Livre();
+
+                    Console.WriteLine("Donner le titre:");
+                    l.titre = Console.ReadLine();
+                    Console.WriteLine("Donner l'auteur:");
+                    l.auteur = Console.ReadLine();
+                    Console.WriteLine("Donner le prix:");
+                    l.prix = Console.ReadLine();
+                    l.Afficher(l);
+                    break;
+                case 2:
+                    Console.WriteLine("vous allez tester la classe {0}", choix);
+                    Rectangle r = new Rectangle();
+                    Console.WriteLine("Donner le Largeur:");
+                    r.Largeur = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Donner la longueur");
+                    r.Longeur = double.Parse(Console.ReadLine());
+                    MenuRectangle();
+                    choix = int.Parse(Console.ReadLine());
+                    switch (choix)
+                    {
+                        case 1:
+                            r.Perimetre();
+                            break;
+                        case 2:
+                            r.Air();
+                            break;
+                        case 3:
+                            r.EstCarre(r);
+                            break;
+                        case 4:
+                            r.AfficherRectangle(r);
+                            break;
+                    }
+                    break;
+                case 3:
+
+                    int choixCompte = 0;
+                    do
+                    {
+                        MenuCompte();
+                        choixCompte = int.Parse(Console.ReadLine());
+                        switch (choixCompte)
+                        {
+                            case 1:
+                                Console.WriteLine("1:creation  Client");
+                                Client c = new Client();
+                                Console.WriteLine("Donner CINr:");
+                                c.Cin = Console.ReadLine();
+                                Console.WriteLine("Donner Nom:");
+                                c.Nom = Console.ReadLine();
+                                Console.WriteLine("Donner prenom:");
+                                c.Prenom = Console.ReadLine();
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+                            case 5:
+                                break;
+                        }
+                            
+                    } while (choixCompte != 5);
+                    break;
+        
+
+            }
+           
+         
+
+            #endregion
+            
+
+
+
+
+           
+            Console.ReadLine();
+           
+
+        }
+
+        private static void Menu()
+        {
+            Console.WriteLine("###################################################");
+            Console.WriteLine("please inser your choice :");
+            Console.WriteLine("1:Livre");
+            Console.WriteLine("2:Rectangle");
+            Console.WriteLine("2:Compte");
+            Console.WriteLine("###################################################");
+        }
+        private static void MenuRectangle()
+        {
+            Console.WriteLine("###################################################");
+            Console.WriteLine("please inser your choice :");
+            Console.WriteLine("1:Perimetre");
+            Console.WriteLine("2:Aire");
+            Console.WriteLine("3:estRectangle");
+            Console.WriteLine("4:afficher rectangle");
+            Console.WriteLine("###################################################");
+        }
+
+        private static void MenuCompte()
+        {
+            Console.WriteLine("###################################################");
+            Console.WriteLine("please inser your choice :");
+            Console.WriteLine("1:Créer Client");
+            Console.WriteLine("2:afficher Client");
+            Console.WriteLine("3:Créer Compte");
+            Console.WriteLine("4:Afficher Compte");
+            Console.WriteLine("5:exit");
+            Console.WriteLine("###################################################");
+        }
+    }
+}
