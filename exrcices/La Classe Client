@@ -1,0 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercices
+{
+    class Client
+    {
+        #region attributs
+
+        string cin;
+        string nom;
+        string prenom;
+        string tel;
+
+
+        #endregion
+
+
+        #region constucteur
+
+        public Client()
+        { }
+        public Client(string cin, string nom, string prenom, string tel)
+        {
+            this.cin = cin;
+            this.nom = tel;
+            this.prenom = prenom;
+            this.tel = tel;
+        }
+        public Client(string cin, string nom, string prenom)
+        {
+            this.cin = cin;
+            this.nom = nom;
+            this.prenom = prenom;
+        }
+        #endregion
+
+
+        #region accesseurs
+        public string Cin
+        {
+            get;
+            set;
+        }
+        public string Nom
+        {
+            get;
+            set;
+        }
+        public string Prenom { get => prenom; set => prenom = value; }
+        public string Tel
+        {
+            get { return tel; }
+            set { tel = value; }
+        }
+
+        #endregion
+
+        #region Methode
+
+        public void Afficher(Client c)
+        {
+            Console.WriteLine("le CIN esst {0}", c.Cin);
+            Console.WriteLine("le nom est {0}", this.nom);
+            Console.WriteLine("le prenom est {0}", c.Prenom);
+        }
+        #endregion
+    }
+}
